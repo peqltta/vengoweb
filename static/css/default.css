@@ -1,0 +1,117 @@
+@media screen, tv { 
+
+/* Resets */
+body,html,ul,ol,li,h1,h2,h3,h4,table,form,p{margin:0;padding:0;}img{border:0;}
+textarea {font-family: inherit;font-size: inherit;}
+*:focus {outline: 0;}
+/*------------------------------------------------------------------*/
+/* Default Styles													*/
+/*------------------------------------------------------------------*/
+
+body {font-family: Arial, Verdana, sans serif;font-size: 16px;color: #fff;margin: 0px;padding: 0px;background-color: #fff;}
+body, html {height: 100%;margin:0;overflow: hidden;}
+body.terms {background-color: #418fde;color: #fff;overflow-y: scroll;}
+
+.clr {clear: both;}
+
+input {-webkit-appearance:none;-moz-appearance:none;}
+
+hr {color: #fff; background-color: #fff; border: 1px solid #fff;border-style: none;margin: 56px 0 16px 0;padding: 0px;height:1px;}
+
+/*------------------------------------------------------------------*/
+/* Layout Styles													*/
+/*------------------------------------------------------------------*/
+
+#wrap {margin: auto;height:100%;}
+
+#left {width:50%;background:#418fde;float:left;height:100%;box-sizing:border-box;position:relative;}
+
+#left #content {box-sizing:border-box;padding:20% 40px 40px 40px;width:80%;margin:auto;left:0;right:0;position:absolute;}
+#left h1 {width: 333px;height: 97px;margin:0 0 25px 0;}
+#left h1 a {background: url(../images/bb322bdd__logo_vengo.svg) no-repeat;text-indent: -1000em;display: block;width: 100%;height: 100%;}
+#left h2 {text-transform:uppercase;font-size:40px;font-style:italic;margin:0 0 7px 0;padding:0 0 0 28px;}
+#left h3 {text-transform:uppercase;font-size:22px;font-weight:normal;padding:0 0 0 28px;}
+
+#right {width:50%;float:right;height:100%;box-sizing:border-box;text-align:center;position:relative;}
+#right .socio {z-index:22;background: url(../images/8a2c8026__icon_rocket.png) no-repeat top 7px right 24px;background-size:35px 35px;border-radius:28px;position:absolute;top:30px;right:30px;padding:15px 65px 12px 25px;color:#ff10f0;border:2px solid #ff10f0;text-transform:uppercase;font-size:22px;font-weight:bold;text-decoration:none;box-sizing:border-box;}
+#right img {width:70%;position:absolute;bottom:0;margin:auto;left:0;right:0;}
+
+#signup {padding-top:100px;}
+#signup p {font-size:22px;padding:0 0 0 28px;margin:0;}
+#signup input {box-sizing:border-box;padding:15px 65px 12px 27px;border:none;border-radius:28px;font-size:22px;}
+#signup input#mce-EMAIL {width:400px;margin:11px 0 0 0;}
+::placeholder {color: #999999;opacity: 1;}
+:-ms-input-placeholder {color: #999999;}
+::-ms-input-placeholder {color: #999999;}
+#signup input#mc-embedded-subscribe {text-transform:uppercase;cursor:pointer;background-color:#ff1d25;color:#fff;padding:15px 27px 12px 27px;margin:22px 0 0 0;box-shadow: #3472b2 20px 20px 0 0;}
+
+#signup button {}
+
+#botmenu {margin:60px 0 0 0;padding:0 0 0 18px;}
+#botmenu ul {list-style:none;}
+#botmenu ul li {list-style:none;display:inline-block;font-style:italic;margin:0 10px 0 10px;}
+#botmenu ul li a {color:#fff;text-decoration:none;}
+
+/*------------------------------------------------------------------*/
+/* Terms pages  													*/
+/*------------------------------------------------------------------*/
+
+#mcontent {padding:15%;box-sizing:border-box;line-height:24px;}
+#mcontent p {margin:0 0 14px 0;}
+#mcontent a {color:#fff;}
+#mcontent h2 {margin:44px 0 44px 0;font-size:30px;}
+#mcontent h3 {margin:44px 0 14px 0;font-size:24px;}
+#mcontent h4 {margin:34px 0 14px 0;font-size:20px;}
+
+
+}
+
+/*------------------------------------------------------------------*/
+/* media iPhone														*/
+/*------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1150px) and (max-width: 1450px) { 
+
+#left #content {padding:15% 30px 30px 30px;width:80%;}
+
+#left h1 {width: 200px;height: 58px;margin:0 0 22px 0;}
+#left h2 {font-size:37px;margin:0 0 4px 0;padding:0 0 0 28px;}
+#left h3 {font-size:19px;padding:0 0 0 28px;}
+
+#signup {padding-top:65px;}
+
+}
+
+@media only screen and (min-width: 220px) and (max-width: 1150px) { 
+
+body, html {height:auto;}
+html {overflow-y: scroll;}
+
+html.terms {overflow-y: scroll;}
+body.terms {overflow: hidden;}
+
+#left h1 {width: 200px;height: 58px;margin:auto;left:0;right:0;margin-bottom:36px;}
+#left h2 {font-size:35px;margin:0 0 7px 0;padding:0 0 0 28px;}
+#left h3 {font-size:17px;fpadding:0 0 0 28px;}
+
+#left {float:none;width:100%;height:auto;position:static;}
+#left #content {position:static;padding:60px 0 60px 0;}
+
+#right {float:none;width:100%;height:auto;position:static;padding:90px 0 0 0;}
+#right .socio {position:static;}
+#right img {width:100%;position:static;margin-top:30px;}
+
+#signup {padding-top:60px;}
+#signup p {font-size:20px;padding:0 0 0 28px;}
+#signup input#mce-EMAIL {width:100%;}
+
+}
+
+
+
+/*!
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from https://vengo.world/css/default.css
+* At UTC time: 2021-09-20 13:25:36.845242
+*/

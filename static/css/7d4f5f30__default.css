@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    font-size: 2vmin;
+    --hover: #ff10f0;
+}
+button::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+h2{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 10vmin;
+    letter-spacing: 0.20rem;
+    line-height: 84%;
+    min-width: 30%;
+}
+#content{
+    text-align: center;
+}
+h3{
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 0.075rem;
+    min-width: 50%;
+    max-width: 100%;
+}
+#apple{
+    width: 153px;
+    height: 46px;
+
+}
+#google{
+    width: 153px;
+    height: 46px;
+}
+.leftfooter{
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 35%;
+    padding-bottom: 5%;
+    
+}
+#spacer{
+    height: 100px;
+    width: 10%;
+}
+#spacer2{
+    height: 10%;
+    margin-top: 1%;
+}
+.storebuttons{
+    display: inline-block;
+    padding-bottom: 50px;
+    text-align:center;
+    margin-top: 1%;
+    
+}
+h1{
+    text-align: center;
+    letter-spacing: 0.15rem;
+    margin-top: 300px;
+    font-size: 26px;
+
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    overflow-x: hidden;
+}
+#left{
+    background-color: #418fde;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    justify-content: flex-start;
+}
+#left a{
+    text-decoration: none;
+    color: #fff;
+}
+.playstore{
+}
+.playstore img{
+}
+#right{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: auto;
+    min-width: 50%;
+
+}
+
+#content{
+    width: 100%;
+    height: 10%;
+}
+.rightimg {
+    width: 100%;
+    height: 80%;
+    max-width: 950px;
+
+}
+.rightimg img{
+    height: 90%;
+    width: 100%;
+    
+}
+
+#right .socio {
+    border-radius: 100px;
+    letter-spacing: 0.1rem;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    font-size: 24pt;
+    text-align: center;
+    color: #ff10f0;
+    border: 2px solid #ff10f0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition-timing-function: ease;
+}
+#right .socio:hover {
+    color: #fff;
+    background-color: #ff10f0;
+    opacity: 95%;
+    transition-timing-function: ease;
+    
+}
+#right .socio img{
+    position: relative;
+    top: 15px;
+}
+#signup{
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+#signup p{
+    width: 100%;
+    text-align: center;
+}
+#signup p strong{
+    font-size: 1rem;
+}
+.svgwrap {
+    padding-left: 7%;
+    padding-top: 7%;
+    height: 15%;
+}
+#content p{
+    text-align: center;
+}
+#botmenu {
+    text-align: center;
+}
+#botmenu ul{
+    list-style: none;
+    padding-top: 10%;
+}
+#botmenu ul li{
+    display: inline;
+    font-style: italic;
+    font-size: 25px;
+    min-width: 50%;
+}
+#botmenu ul li a {
+    font-size: 25px;
+}
+#botmenu ul li a:hover{
+    color: #ff10f0;
+}
+@media screen and (max-width: 1000px) {
+    #right{
+        width: 100%;
+    }
+    #right .socio{
+    }
+}
+@media screen and (max-width: 500px) {
+    #left{
+        width: 100%;
+    }
+    .rightimg{
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        margin-top: 20%;
+        font-size: 25px;
+        width: 100%;
+    }
+    .storebuttons{
+        width: 100%;
+    }
+    #right{
+    }
+
+@media screen and (max-width: 300px){
+    .storebuttons img{
+        max-width: 125px;
+    }
+
+}
+}
