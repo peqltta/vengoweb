@@ -6,7 +6,7 @@ app = Flask(__name__,static_url_path="", static_folder="static")
 def hello_world():
     return render_template('index.html')
 
-@app.route("/update", methods=['POST'])
+@app.route("/update", methods=['GET','POST'])
 def update():
     subprocess.run(["git","pull"])
     return "updated"
