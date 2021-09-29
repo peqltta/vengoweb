@@ -46,26 +46,28 @@
 	   C234,41.3,235.6,41.6,237.4,41.6"/>
 	</svg>
 </div>
-		<div id="content">
+		<div id="contentMine">
 			<h2>Let's Ride</h2>
-			<h3>We'd say the best ride hailing app, yet <img allign="absmiddle" src="img/5db862ae__icon_emoji.png" width="26" alt="Let's Ride!"></h3>
+			<h3 
+			id="moveMe">We'd say the best ride hailing app, yet <img allign="absmiddle" src="img/5db862ae__icon_emoji.png" width="26" alt="Let's Ride!"></h3>
+			<div class="leftfooterMine">
+				<h1>Available Now</h1>
+				<div class="storebuttons">
+					<a href='https://play.google.com/store/apps/details?id=vengo.world.client&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1%27%3E'><img id="google"src="/img/google-play-badge_1.png"/></a>
+					<a href='https://apps.apple.com/gb/app/vengo-request-your-ride-now/id1585114985'><img id="apple" src="/img/apple.png"></a>
+				  </div>
+				  
+				<div id="botmenuMine">
+					<ul>
+						<li><a target="blank" href="{{ url_for('static', filename='sdg.pdf') }}">SDG</a> -</li>
+						<li><a target="blank" href="{{ url_for('static', filename='file_965c2d4b.html') }}">Terms of use</a> -</li>
+						<li><a target="blank" href="{{ url_for('static', filename='file_391d62a6.html') }}">Privacy</a> -</li>
+						<li><a target="blank" href="https://support.vengo.world">Support</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="leftfooter">
-			<h1>Available Now</h1>
-			<div class="storebuttons">
-				<a href='https://play.google.com/store/apps/details?id=vengo.world.client&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1%27%3E'><img id="google"src="/img/google-play-badge_1.png"/></a>
-				<a href='https://apps.apple.com/gb/app/vengo-request-your-ride-now/id1585114985'><img id="apple" src="/img/apple.png"></a>
-			  </div>
-			  
-			<div id="botmenu">
-				<ul>
-					<li><a target="blank" href="{{ url_for('static', filename='sdg.pdf') }}">SDG</a> -</li>
-					<li><a target="blank" href="{{ url_for('static', filename='file_965c2d4b.html') }}">Terms of use</a> -</li>
-					<li><a target="blank" href="{{ url_for('static', filename='file_391d62a6.html') }}">Privacy</a> -</li>
-					<li><a target="blank" href="https://support.vengo.world">Support</a></li>
-				</ul>
-			</div>
-			</div>
+		</div>
+			
 		</div>
     <div id="right">
 		<a target="_blank" href="https://socio.vengo.world" title="Become a socio" class="socio">Become a socio<img src="/img/8a2c8026__icon_rocket.png"/></a>
@@ -73,5 +75,18 @@
 		<span class="rightimg"><img src="img/iphone.svg" alt="Vengo"/></span>
 		<div class="clr"></div>
 	</div>
+	<script>
+		if( navigator.userAgent.match(/Android/i)
+		|| navigator.userAgent.match(/webOS/i)
+		|| navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i)
+		|| navigator.userAgent.match(/BlackBerry/i)
+		|| navigator.userAgent.match(/Windows Phone/i)
+		) {
+			document.querySelector('body').classList.add('mobile')
+		}
+		
+	</script>
 </body>
 </html>
