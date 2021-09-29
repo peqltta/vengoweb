@@ -7,7 +7,7 @@ def hello_world():
     return render_template('index.html')
 @app.route("/update", methods=['GET','POST'])
 def update():
-    subprocess.run(["git","pull"])
+    subprocess.run(["sh","update.sh"])
     return "updated"
 app.run(host='0.0.0.0', port='5000', debug=True)
 
