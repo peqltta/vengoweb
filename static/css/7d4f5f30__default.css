@@ -1,331 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-:root{
-    font-size: 2vmin;
-    --hover: #ff10f0;
+:root {
+    --blue: #418fde;
+    --red: #ff2b75;
 }
-button::-moz-focus-inner {
-    border:0;
-    padding:0;
-}
-*{
-    margin: 0;
-    padding: 0;
-    margin-top: 0;
-}
-
-h2{
-    margin-top: 2%;
-    text-align: center;
-    font-size: 10vmin;
-    letter-spacing: 0.20rem;
-    line-height: 84%;
-    min-width: 30%;
-}
-#content{
-    text-align: center;
-}
-h3{
-    margin-top: 2vh;
-    text-align: center;
-    font-size: 45px;
-    letter-spacing: 0.075rem;
-    min-width: 50%;
-    max-width: 100%;
-}
-#apple{
-    width: 153px;
-    height: 46px;
-
-}
-#google{
-    width: 153px;
-    height: 46px;
-}
-.leftfooter{
-    width: 100%;
-    margin-top: 5vh;
+body {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    height: 35%;
-    padding-bottom: 5%;
-    
+    overflow-y: hidden;
 }
-#spacer{
-    height: 100px;
-    width: 10%;
-}
-#spacer2{
-    height: 10%;
-    margin-top: 1%;
-}
-
-
-h1{
-    text-align: center;
-    letter-spacing: 0.15rem;
-    margin-top: 300px;
-    font-size: 26px;
-
-}
-body{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
+#left {
+    width: 50vw;
     height: 100vh;
-    font-family: 'Bebas Neue', cursive;
-    color: #fff;
-    overflow-x: hidden;
+    background: var(--blue);
 }
-#left{
-    background-color: #418fde;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 50%;
-    justify-content: flex-start;
+#right {
+    width: 50vw;
+    height: 100vh;
 }
-#left a{
+#right a {
+    border: 3px solid var(--red);
+    padding: 5px;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 1.25rem;
     text-decoration: none;
-    color: #fff;
-}
-.playstore{
-}
-.playstore img{
-}
-#right{
+    color: var(--red);
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-radius: 50px;
     display: flex;
-    height: 100%;
-    flex-direction: column;
-    margin: auto;
-    min-width: 50%;
-
-}
-
-#content{
-    width: 100%;
-    height: 10%;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
 }
 .rightimg {
+    margin-top: -30px;
     width: 100%;
-    height: 80%;
-    max-width: 950px;
-
+    display: flex; justify-content: center;
+    height: 100%; align-items: center;
 }
-.rightimg img{
-    height: 90%;
-    width: 100%;
-    
-}
-
-#right .socio {
-    border-radius: 100px;
-    letter-spacing: 0.1rem;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    padding-left: 2%;
-    padding-right: 1%;
-    padding-bottom: 3%;
-    font-size: 24pt;
-    text-align: center;
-    color: #ff10f0;
-    border: 2px solid #ff10f0;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    transition-timing-function: ease;
-}
-#right .socio:hover {
-    color: #fff;
-    background-color: #ff10f0;
-    opacity: 95%;
-    transition-timing-function: ease;
-    
-}
-#right .socio img{
-    position: relative;
-    top: 15px;
-}
-#signup{
-    display: flex;
-    margin-top: 10%;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-#signup p{
-    width: 100%;
-    text-align: center;
-}
-#signup p strong{
-    font-size: 1rem;
-}
-.svgwrap {
-    padding-left: 7%;
-    padding-top: 7%;
-    height: 15%;
-}
-#content p{
-    text-align: center;
-}
-#botmenu {
-    text-align: center;
-}
-#botmenu ul{
-    list-style: none;
-    padding-top: 10%;
-}
-#botmenu ul li{
-    display: inline;
-    font-style: italic;
-    font-size: 25px;
-    min-width: 50%;
-}
-#botmenu ul li a {
-    font-size: 25px;
-}
-#botmenu ul li a:hover{
-    color: #ff10f0;
-}
-
-@media screen and (max-width: 500px) {
-    #left{
-        width: 100%;
-    }
-    .rightimg{
-    }
-    h2{
-        font-size: 50px;
-    }
-    h3{
-        margin-top: 20%;
-        font-size: 25px;
-        width: 100%;
-    }
-    .storebuttons{
-        width: 100%;
-    }
-    #right{
-    }
-
-@media screen and (max-width: 300px){
-    
-
-}
+.rightimg img {
+    max-width: 275px;
 }
 #contentMine {
-    display: flex; flex-direction: column; gap: 3vh;
-    justify-content: space-between;
-    height: calc(100vh - 200px);
-    width: calc(100% - 4vw);
-    padding-left: 2vw; padding-right: 2vw;
+     width: 100%;
+     height: calc(100vh - 350px);
+     display: flex; flex-direction: column;
+     justify-content: center;
+     gap: 0vh;
+     font-family: Oswald;
+     text-transform: uppercase;
+     color: white;
+     text-align: center;
 }
-#contentMine  h2 {
-    margin-top: 5vh;
-    font-size: 5rem;
+#contentMine h2 {
+    font-size: 4rem;
+    margin-bottom: 0;
 }
-#contentMine  h3 {
-    margin-top: -10vh;
-    font-size: 3.5rem;
+#contentMine h3 {
+    font-size: 3rem;
+    margin-top: 4vh;
+    margin-bottom: 0;
+    padding-left: 4vw; padding-right: 4vw;
 }
+#contentMine h1 {
+    font-size: 2.5rem;
+    margin-top:7vh;
+    margin-bottom: 0;
 
-.leftfooterMine {
-    height: 22vh;
-    margin-top: -5vh;
-}
-.leftfooterMine h1 {
-    margin: 0;
-    font-size: 40px;
-    padding-bottom: 2vh;
 }
 .storebuttons {
-    display: flex; justify-content: center; width: 100%;
-}
-.storebuttons img {
-    height: auto;
-    min-height: 70px;
-}
-#botmenuMine ul {
-    display: flex; justify-content: center; list-style: none;
-    bottom: 0;
+    display: flex; justify-content: center;
+    width: 100%; height: 200px;
     margin-top: 3vh;
 }
+.storebuttons img {
+    height: auto; max-width: 175px;
+}
+#botmenuMine {
+    display: flex; justify-content: center;
+    width: 50vw; height: 100px;
+    position: absolute; bottom: 0;
+}
+#moveMe img {
+    min-width: 55px;
+    padding-top: 5px;
+    height: auto;
+}
+#botmenuMine ul {
+    list-style: none; display: flex; justify-content: center;
+    align-items: center;
+}
+#botmenuMine ul li a {
+    text-decoration: none; color: white;
+    font-style: italic; align-items: center;
+}
 #botmenuMine ul li {
-    font-size: 2rem;
-    font-style: italic;
-    padding-left: 6px;
+    padding-right: 0.75rem;
+    font-size: 1.5rem;
 }
-@media screen and (max-width: 1000px) {
-    #right{
-        width: 100%;
-    }
-    .leftfooterMine {
-        height: 30vh;
-    }
-    #botmenuMine ul {
-        margin-top: 6vh;
-    }
-}
-@media screen and (max-width: 900px) {
-    #contentMine {
-        width: 92vw;
-        padding-right: 4vw;
-        padding-left: 4vw;
-    }
-}
-@media screen and (max-width: 600px) {
+@media (max-width: 1420px) {
     #contentMine h2 {
-        font-size: 6.5rem;
+        font-size:3.5rem;
     }
     #contentMine h3 {
-        font-size: 4.5rem;
+        font-size: 2.5rem;
+        margin-top: 5vh;
+    }
+    #contentMine h1 {
+        font-size: 2.25rem;
     }
 }
-@media screen and (max-width: 450px) {
+@media (max-width: 1140px) {
+    body {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
     #contentMine {
-        gap: 10vh;
+        width:100vw;
     }
     #contentMine h2 {
-        font-size: 10rem;
-    }
-    #contentMine h3 {
-        font-size: 6rem;
-    }
-    #botmenuMine ul li {
         font-size: 3.5rem;
     }
-    #botmenuMine ul  {
-        margin-top: 10vh;
-    }
-}
+    #contentMine h3 {
+        font-size: 3rem;
+        padding-left: 10vw; padding-right: 10vw;
 
-.mobile #contentMine {
-    height: calc(90vh - 200px);
-    margin-top: 5vh; gap: 5vh;
-}
-.mobile #contentMine h2 {
-    margin: 0;
-}
-.mobile #contentMine h3 {
-    margin: 0;
-}
-.mobile #contentMine .leftfooterMine {
-    margin: 0;
-}
-.mobile #contentMine .leftfooterMine #botmenuMine ul {
-    margin: 0; 
-    position: absolute;
-    bottom: 5vh;
-}
-@media (max-width: 900px) {
-    .mobile #contentMine .leftfooterMine #botmenuMine ul li:nth-child(1) {
-        padding-left: 0;
     }
-    .mobile #contentMine .leftfooterMine #botmenuMine ul {
-        display: flex; justify-content: center; width: 95%;
-        bottom: 12vh;
+    #contentMine h1 {
+        font-size: 2.75rem;
     }
+    #left {
+        width: 100vw;
+
+    }
+    #right {
+        width: 100vw;
+    }
+    #right a {
+        margin-top: 50px;
+    }
+    #botmenuMine {
+        width: 100vw;
+    }
+}
+@media (max-width: 700px) {
+    #contentMine h2 {
+        margin-top: 0;
+    }
+}
+@media (max-width: 600px) {
+    #botmenuMine ul li {
+        font-size: clamp(10px, 1.4rem, 5vw);
+        padding-right: clamp(0px, 10px, 2vw);
+        
+    }
+    #botmenuMine ul li:nth-child(1) {
+        margin-left: -10px;
+    }
+}
+@media (max-width: 550px) {
+    #contentMine h2 {
+        margin-top: 0;
+        font-size: 3.5rem;
+    }
+    #contentMine h3 {
+        font-size: 2.5rem;
+        margin-top: 2vh;
+    }
+    #contentMine h1 {
+        font-size: 2rem;
+        margin-top: 4vh;
+    }
+    .storebuttons {
+        flex-direction: column;
+    }
+}
+.storebuttons ul li:hover   {
+    color: blue;
 }
