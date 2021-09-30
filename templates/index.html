@@ -52,13 +52,14 @@
 		</div>
 
 		<div id="contentMine">
-			<h2>Let's Ride</h2>
+			<h2 class="scrollTrig">Let's Ride</h2>
 			<h3 
+			class="scrollTrig"
 			id="moveMe">We'd say the best ride hailing app, yet <img allign="absmiddle" src="img/5db862ae__icon_emoji.png" width="26" alt="Let's Ride!"></h3>
-			<h1>Available Now</h1>
-			<div class="storebuttons">
-					<a href='https://play.google.com/store/apps/details?id=vengo.world.client&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1%27%3E'><img id="google"src="/img/google-play-badge_1.png"/></a>
-					<a href='https://apps.apple.com/gb/app/vengo-request-your-ride-now/id1585114985'><img id="apple" src="/img/apple.png"></a>
+			<h1 class="scrollTrig">Available Now</h1>
+			<div class="storebuttons scrollTrig">
+					<a  href='https://play.google.com/store/apps/details?id=vengo.world.client&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1%27%3E'><img id="google"src="/img/google-play-badge_1.png"/></a>
+					<a  href='https://apps.apple.com/gb/app/vengo-request-your-ride-now/id1585114985'><img id="apple" src="/img/apple.png"></a>
 			</div>	  
 			<div id="botmenuMine">
 					<ul>
@@ -77,8 +78,23 @@
 		<span class="rightimg"><img src="img/iphone.svg" alt="Vengo"/></span>
 		<div class="clr"></div>
 	</div>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
+		let btn = document.querySelector('#right a')
+		let items = Array.from(document.querySelectorAll('.scrollTrig'));
+		let menu = Array.from(document.querySelectorAll('#botmenuMine ul li'));
+		menu.map(m => {
+			let blue = 'rgba(255, 43, 117, 0.8)';
+			m.addEventListener('mouseover', () => {
+				let a = m.querySelector('a');
+				console.log(m, a)
+				gsap.to(a, {color: blue, fontStyle: 'normal', scaleX: 1.2, duration: 0.4})
+			})
+			m.addEventListener('mouseout', () => {
+				let a = m.querySelector('a');
+				gsap.to(a, {color: 'white', fontStyle: 'italic', scaleX: 1, duration: 0.4})
+			})
+		})
 		if( navigator.userAgent.match(/Android/i)
 		|| navigator.userAgent.match(/webOS/i)
 		|| navigator.userAgent.match(/iPhone/i)
@@ -89,7 +105,12 @@
 		) {
 			document.querySelector('body').classList.add('mobile')
 		}
-		
+		window.addEventListener('DOMContentLoaded', () => {
+			items.map((item,i) => {
+				let time = i * 0.4
+				gsap.fromTo(item, {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.6, delay: time})
+			})
+		})
 	</script>
 </body>
 </html>
